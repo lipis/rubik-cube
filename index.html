@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+  <title>Rubik's Cube Solution</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    h1 {
+      margin: 64px 0 48px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Rubik's Cube Solution</h1>
+    <div class="row">
+      <div class="col-sm">
+        First, we must arrive at a standard for referring to the cube sides. When you hold the cube in your hands (or other appendages
+        as may be the case), F is the side facing you, likewise with L (left) and R (right). Bottom is the side on the bottom
+        and P is the oddball notation meaning the opposite side.
+      </div>
+      <div class="col-sm text-center">
+        <img height=236 src="cube.gif" width=242>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm">
+        <h3>I. Top and First Row</h3>
+        <p>
+          To start, you must have one side completely matching. Note that the sides match their appropriate middle colors. We won't
+          go into how to get this far. If you can't get one side all matching, go play Quake.
+        </p>
+      </div>
+      <div class="col-sm text-center">
+        <img height=201 width=169 src="1.gif">
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm">
+        <h3>II. Middle Edges</h3>
+        <p>Pick one of the sides whose right middle edge piece is located on the bottom edge. Rotate the bottom of the cube
+          if need be to align the piece either bottom-right or bottom-front of where it needs to go. Follow the directions
+          below depending upon which configuration you are looking at. Repeat the process for every middle edge on the cube
+          until they are all in their correct positions. Notice that you must align the bottom row so that the color of the
+          bottom edge matches the color of the middle piece.</p>
+      </div>
+      <div class="col-sm">
+        <CENTER>
+          <TABLE border=0>
+            <TBODY>
+              <TR>
+                <TD align=middle>
+                  <img height=169 src="2a.gif" width=169>
+                </TD>
+                <TD align=middle rowSpan=2 vAlign=top>
+                  <img height=235 hspace=10 src="dot.gif" width=2>
+                </TD>
+                <TD align=middle>
+                  <img height=169 src="2b.gif" width=169>
+                </TD>
+              </TR>
+              <TR>
+                <TD align=middle vAlign=top>
+                  <h4>BR to FR</h4>
+                  <p>B+ F+ B- F- B- R- B+ R+</p>
+                </TD>
+                <TD align=middle vAlign=top>
+                  <h4>BF to FR</h4>
+                  <p>B- R- B+ R+ B+ F+ B- F-</p>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </CENTER>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm">
+        <h3>III. Bottom Corners</h3>
+        <p>Next, get all four bottom corners in the correct spots, but not necessarily in their correct orientation. This will
+          be done in step IV.</p>
+      </div>
+      <div class="col-sm">
+        <CENTER>
+          <TABLE border=0>
+            <TBODY>
+              <TR>
+                <TD align=middle>
+                  <img height=169 src="3a.gif" width=169>
+                </TD>
+                <TD rowSpan=2 vAlign=top>
+                  <img height=236 hspace=10 src="dot.gif" width=2>
+                </TD>
+                <TD align=middle>
+                  <img height=169 src="3b.gif" width=169>
+                </TD>
+              </TR>
+              <TR>
+                <TD align=middle vAlign=top>
+                  <h4>BFL to BFR</h4>
+                  <p>R- B- R+ F+ B+ F- R- B+ R+ B2</p>
+                </TD>
+                <TD align=middle vAlign=top>
+                  <h4>BFL to BPR</h4>
+                  <p>R- B- R+ F+ B2 F- R- B+ R+ B+</p>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </CENTER>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm">
+        <h3>IV. Orient Bottom Corners</h3>
+        <p>
+          Looking at the bottom (in our pictures, orange), determine which configuration you are looking at from the picture below.
+          The blue squares represent the color of the bottom (again, orange in our examples). Once you have determined which
+          combination you have, orient the bottom of the cube like shown in the picture below. Now, no matter what you have
+          been considering left, front, and right previously, this becomes your new orientation. With the cube held in your
+          hand this way, follow the directions below. (Repeat this procedure until all four bottom corners are aligned correctly.)
+        </p>
+      </div>
+      <div class="col-sm text-center">
+        <img height=122 src="4.gif" width=562>
+        <p>R- B- R+ B- R- B2 R+ B2</p>
+      </div>
+    </div>
+    <hr>
+    <h3>V. Position and Orient Bottom Edges</h3>
+    <p>
+      Lastly, position the bottom edges. The way you hold the cube is determined by the pattern formed by the bottom color positions
+      as shown in the pictures below.
+    </p>
+    <h4>Zero Positioned</h4>
+    <p>
+      (L- R+) F+ (L+ R-) B2 (L- R+) F+ (L+ R-)
+    </p>
+    <p>
+      <strong>* </strong>One Positioned (Hold BF) same as Zero Positioned
+    </p>
+    <h4>All Four Positioned</h4>
+    <div align=left>
+      <TABLE border=0>
+        <TBODY>
+          <TR>
+            <TD>
+              <img height=191 src="5a.gif" width=220>
+            </TD>
+            <TD>(L- R+) F2 (L+ R-) B2 (L- R+) F+ (L+ R-) B2 (L- R+) F2 (L+ R-) B-
+            </TD>
+          </TR>
+          <TR>
+            <TD>
+              <img height=191 src="5b.gif" width=178>
+            </TD>
+            <TD>(L- R+) F+ (L+ R-) B+ (L- R+) F+ (L+ R-) B+ (L- R+) F2 (L+ R-) B+ (L- R+) F+ (L+ R-) B+ (L- R+) F+ (L+ R-) B2
+            </TD>
+          </TR>
+          <TR>
+            <TD>
+              <img height=170 src="5c.gif" width=199>
+            </TD>
+            <TD>(L- R+) F+ (L+ R-) B- (L- R+) F- (L+ R-) B- (L- R+) F2 (L+ R-)
+              <EM>go to </EM>
+              <EM>
+                <strong>*</strong>
+              </EM>
+            </TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+    </div>
+  </div>
+</body>
+
+</html>
